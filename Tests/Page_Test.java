@@ -3,17 +3,9 @@ package tests;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
 
-import database.DB_Reset;
-import page_objects.Login;
-import page_objects.TestPage;
-import page_objects.StandOut;
-
-public class Page_Test extends StandOut
+public class Page_Test extends AbstractTest
 {
 	@Test
 	public void runTest() throws Exception 
