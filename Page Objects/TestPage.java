@@ -9,10 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class TestPage extends Page_Methods
+public class TestPage extends AbstractPageObject
 {
-	private WebDriverWait wait;
-	
 	@FindBy(css = "button.btn-primary.next")
 	private WebElement nextButton;
 	
@@ -86,7 +84,7 @@ public class TestPage extends Page_Methods
 	 * Returns whether HTWBWM is displayed.
 	 * 
 	 * @param driver	the driver for this class.
-	 * @return			<code>true</code> if Webelement is displayed
+	 * @return		<code>true</code> if Webelement is displayed
 	 */
 	public boolean HTWBWMIsDisplayed(WebDriver driver)
 	{
@@ -104,7 +102,7 @@ public class TestPage extends Page_Methods
 	 * Returns whether CTMW is displayed.
 	 * 
 	 * @param driver	the driver for this class.
-	 * @return			<code>true</code> if Webelement is displayed
+	 * @return		<code>true</code> if Webelement is displayed
 	 */
 	public boolean CTMWIsDisplayed(WebDriver driver)
 	{
@@ -122,7 +120,7 @@ public class TestPage extends Page_Methods
 	 * Returns whether the posts header is displayed.
 	 * 
 	 * @param driver	the driver for this class.
-	 * @return			<code>true</code> if Webelement is displayed
+	 * @return		<code>true</code> if Webelement is displayed
 	 */
 	public boolean postsHeaderIsDisplayed(WebDriver driver)
 	{
@@ -140,7 +138,7 @@ public class TestPage extends Page_Methods
 	 * Returns whether the add post is displayed.
 	 * 
 	 * @param driver	the driver for this class.
-	 * @return			<code>true</code> if Webelement is displayed
+	 * @return		<code>true</code> if Webelement is displayed
 	 */
 	public boolean addPostIsDisplayed(WebDriver driver)
 	{
@@ -158,7 +156,7 @@ public class TestPage extends Page_Methods
 	 * Returns whether the filter button is displayed.
 	 * 
 	 * @param driver	the driver for this class.
-	 * @return			<code>true</code> if Webelement is displayed
+	 * @return		<code>true</code> if Webelement is displayed
 	 */
 	public boolean filterButtonIsDisplayed(WebDriver driver)
 	{
