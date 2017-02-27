@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class AbstractPageObject
 {
-  protected WebDriver driver;
+  	protected WebDriver driver;
 	protected WebDriverWait wait;
 	public java.sql.Connection con;
 	public java.util.Properties props;
